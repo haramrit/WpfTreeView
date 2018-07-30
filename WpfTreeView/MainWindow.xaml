@@ -6,7 +6,16 @@
         xmlns:local="clr-namespace:WpfTreeView"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Image Width="20" Source="Images\folder-closed.png"/>
+        </StackPanel>
+        <TreeView x:Name="FolderView">
+            <TreeView.Resources>
+                <Style TargetType="{x:Type TreeViewItem}">
+                    
+                </Style>
+            </TreeView.Resources>
+        </TreeView>
+    </StackPanel>
 </Window>
